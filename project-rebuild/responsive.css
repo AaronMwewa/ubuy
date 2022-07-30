@@ -1,0 +1,40 @@
+@media only screen and (max-width:900px) {
+    .banner {
+        flex-wrap: wrap-reverse;
+    }
+    .banner .text,
+    .banner .illustration {
+        flex-basis: 100%;
+    }
+    .banner .text {
+        text-align: center;
+    }
+    .footer .sides {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .header .menu-icon {
+        right: 1.5rem;
+    }
+    .header ul li a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .store-section .store {
+        grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .footer .sides {
+        flex-basis: 100%;
+        margin: 1rem 0;
+    }
+    .footer .sides img {
+        width: 40%;
+    }
+}

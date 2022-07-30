@@ -1,0 +1,248 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+ :root {
+    --color-dark: #fc7643;
+    --color-main: #ffa364;
+    --color-grey: #f3f3f377;
+    --font-accent: 'Mochiy Pop One', sans-serif;
+    --font-normal: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fc774313;
+}
+
+.felix {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+}
+
+.header span {
+    font-size: 1.8rem;
+}
+
+.header span small {
+    font-size: 1.8rem;
+    color: var(--color-dark);
+}
+
+.header ul li a {
+    margin: 0 0 0 1rem;
+    font-size: 1.3rem;
+}
+
+.header ul li a:hover {
+    color: var(--color-dark);
+}
+
+.header img {
+    display: none;
+    position: absolute;
+    width: 25px;
+    right: 1.5rem;
+}
+
+.banner {
+    width: 95%;
+    height: 90vh;
+    margin: auto;
+}
+
+.banner .text {
+    flex-basis: 40%;
+    font-size: 2rem;
+}
+
+.banner .text h1 {
+    color: var(--color-dark);
+}
+
+.banner .illustration {
+    flex-basis: 60%;
+}
+
+.banner .illustration img {
+    width: 100%;
+}
+
+.store-section {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.store-section h2 {
+    text-align: center;
+    font-family: var(--font-accent);
+    font-weight: 500;
+    color: var(--color-dark);
+}
+
+.store-section .store {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.store-section .store .card {
+    background-color: var(--color-grey);
+    border-radius: 1rem;
+    box-shadow: 1px 2px 10px var(--color-dark);
+    overflow: hidden;
+}
+
+.store-section .store .card img {
+    width: 100%;
+    aspect-ratio: 1/.55;
+    object-fit: cover;
+}
+
+.store-section .store .card .info {
+    padding: .5rem;
+}
+
+.store-section .store .card .sell {
+    padding: .5rem 0;
+    justify-content: space-between;
+}
+
+.store-section .store .card .sell span {
+    background-color: #fc7643;
+    padding: .1rem .4rem;
+    border-radius: .9rem;
+}
+
+.bill-master {
+    display: none;
+    top: 150px;
+    width: 100%;
+    z-index: 10;
+}
+
+.bill-master .bill-master-top {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    justify-content: center;
+}
+
+.bill-master h2 {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 1rem auto 0 auto;
+}
+
+.bill-master img {
+    width: 25px;
+}
+
+.bill-master .bill-card {
+    width: 95%;
+    margin: .5rem auto;
+    display: grid;
+    grid-template-columns: 25% 50% 10%;
+    align-items: center;
+    background-color: var(--color-dark);
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.bill-master .bill-card .bill-info {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.bill-master .bill-card .bill-img {
+    width: 100%;
+    aspect-ratio: 1/.5;
+    object-fit: cover 50% 50%;
+}
+
+.bill-master .bill-card .remove-bill-item {
+    width: 20px;
+}
+
+.bill-master .total-amount {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    border-top: 2px solid var(--color-dark);
+}
+
+.bill-master .total-amount h3 {
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.bill-master .total-amount p {
+    font-weight: 700;
+    font-size: 1.rem;
+}
+
+.bill-master .pay-now-btn {
+    width: 50%;
+    padding: .5rem 0;
+    background: #fc7643;
+    font-size: 1.3rem;
+    margin: 1rem auto;
+    text-align: center;
+    border-radius: 5rem;
+}
+
+.bill-master-icon {
+    display: none;
+    top: 90%;
+    right: 1rem;
+    width: 50px;
+    padding: .8rem;
+    border-radius: 50%;
+    background-color: var(--color-dark);
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: rgba(187, 187, 187, 0.9);
+    justify-content: space-between;
+}
+
+.footer .sides {
+    flex-basis: 24%;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.footer h4 {
+    color: var(--color-dark);
+    text-transform: uppercase;
+}
+
+.footer .sides img {
+    width: 80%;
+}
